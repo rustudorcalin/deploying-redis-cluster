@@ -474,7 +474,7 @@ As soon as hit-counter-lb Service is up and we have a public IP address assigned
 
 ![04](images/04-rancher-app-deployment.png)
 ![05](images/05-rancher-app-lb.png)
-![06](images/06-rancher-app-hit.png)
+![06](images/06-rancher-app-hit-before.png)
 
 Now, as we saw the Redis key increasing with every hit, let's try bring one of the master nodes down. We will see how `redis-cluster-0` previously as master, will turn into slave, and its slave, `redis-cluster-3` will become master. Now try to hit again the public IP, you will see that the number of hits is kept and data was not lost.
 
